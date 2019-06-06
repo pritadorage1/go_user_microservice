@@ -1,0 +1,10 @@
+database: 
+  dbname: go_todo
+  host: localhost
+  password: root
+  port: 3306
+  username: root
+restgateway: 
+  grpcport: 9090
+  host: "127.0.0.1"
+  port: 8080

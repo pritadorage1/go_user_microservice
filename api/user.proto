@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package usecase;
+
+service UserService {
+  rpc Create(User) returns (UserCreateResponse) {}
+  rpc GetAll(Request) returns (AllUserResponse) {}
+}
+
+message User{
+  int64 id = 1;
+  string name = 2;
+  string email_id = 3;
+  string password = 4;
+  string created_at = 5;
+  string updated_at = 6;
+  string token = 7;
+}
+
+message UserCreateResponse{
+  User user = 1;
+}
+
+message Request {
+
+}
+
+message Error {
+    int32 code = 1;
+    string description = 2;
+}
+
+message AllUserResponse{
+    repeated User users = 1;
+    repeated Error errors = 2;
+}
