@@ -9,7 +9,7 @@ grpc:
 rest:
 	# building rest gateway binary
 	$(GOBUILD) -o bin/rest cmd/rest/main.go
-#github.com/PandeKaustubhS/
+
 proto:
 	# # compiling protobuffer code:
 	protoc --proto_path=api \
