@@ -6,7 +6,7 @@
 3. Run "make proto" command. It will all binary files in "usecase" folder
 4. Run "make grpc" command. 
 5. Run "make rest" command. 
-5. Run  "./drug-server --server_address=127.0.0.1:9090"
+5. Run  "./bin/grpc --server_address=127.0.0.1:9090"
 7. Open new  terminal and run "./bin/rest". You can see server is running on port 8080
 8. Hit the rest API on localhost:8080/user/getall
 
